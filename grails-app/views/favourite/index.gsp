@@ -1,16 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <meta name="layout" content="main"/>
+    <title>Favourite config</title>
 </head>
 
 <body>
-    <table>
+<h1>${appDetails}</h1>
+    <table class="table table-bordered">
+        <caption>Favourites</caption>
         <tr>
             <th>Key</th>
             <th>Value</th>
         </tr>
-        <g:each in="${favouriteList}" var="fav">
+        <g:each in="${favConfig}" var="fav">
             <tr>
                 <td>${fav.key}</td>
                 <td>${fav.value}</td>
